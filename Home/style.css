@@ -1,21 +1,21 @@
-:root{
-    --black:#250902;
-    --brown1:#38040E;
-    --brown2:#640D14;
-    --red1:#800E13;
-    --red2:#AD2831;
+:root {
+    --black: #250902;
+    --brown1: #38040E;
+    --brown2: #640D14;
+    --red1: #800E13;
+    --red2: #AD2831;
 
 }
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
 
-body{
+body {
     background-color: var(--red2);
     display: flex;
     flex-direction: column;
@@ -23,25 +23,26 @@ body{
     justify-content: center;
 }
 
-.s1{
+.s1 {
     width: 100%;
     height: auto;
 
 }
 
-.img-s1{
+.img-s1 {
     width: 100%;
+    height: auto;
 }
 
-.title{
-   font-family: "Libre Bodoni", serif;
-   color: black;
-   
+.title {
+    font-family: "Libre Bodoni", serif;
+    color: black;
+
 }
 
-.preconnect{
-    margin-top:  20px;
-   margin-right: 20px;
+.preconnect {
+    margin-top: 20px;
+    margin-right: 20px;
     margin-left: 20px;
     color: var(--brown1);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -49,11 +50,25 @@ body{
     font-weight: bold;
 }
 
-.line{
+.line {
     background-color: var(--brown2);
     height: 3px;
     border: var(--red1);
     width: 90%;
     margin: 0 auto;
     margin-bottom: 40px;
+}
+
+@media (width >=768px) {
+    .img-s1 {
+        display: none;
+    }
+
+    .s1 {
+        background-image: url('./images/bgDesktop.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 90vh;
+    }
 }
