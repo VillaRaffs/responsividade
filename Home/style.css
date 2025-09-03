@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .s1 {
@@ -50,6 +51,26 @@ body {
     padding-top: 20px;
     margin-bottom: 50px;
     font-size: 20px;
+    color: var(--black);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.line2{
+    width: 90%;
+    height: 5px;
+    border: var(--red1);
+    background-color: var(--red1);
+    display: block;
+}
+
+.line3{
+    width: 90vw;
+    height: 5px;
+    border: var(--red1);
+    background-color: var(--red1);
+    display: block;
 }
 
 .preconnect {
@@ -87,9 +108,45 @@ body {
     box-shadow: #090909;
 }
 
+.bottom-card{
+    padding: 10px;
+}
+
+.bottom-card h2{
+    color: var(--red1);
+    font-size: 30px;
+    text-shadow: 0 4px 4px black;
+    margin-bottom: 10px;
+}
+
+.bottom-card p{
+    color: var(--red2);
+    font-size: 20px;
+}
+
+button{
+    background-color: var(--brown1);
+    color: #090909;
+    border-radius: 999px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 320px;
+    height: 72px;
+    border: none;
+    font-size: 24px;
+    opacity: 0.9;
+    transform: all 200ms  linear;
+}
+
+button:hover{
+    opacity: 1;
+    cursor:pointer;
+
+}
+
 .top-card {
-    width: 300px;
-    height: 200px;
+    width: 430px;
+    height: 102px;
     overflow: hidden;
 }
 
@@ -115,5 +172,33 @@ body {
         background-position: center;
         background-size: cover;
         min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    .title {
+    font-family: "Libre Bodoni", serif;
+    color: var(--brown2);
+    font-size: 40px;
+    text-shadow: o 4px 4px var(--black);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.line{
+    display: none;
+}
+
+.frase{
+   color: white;
+   font-size: 32px;
+   width: 100%;
+   text-align: center;
+   text-shadow: 0 4px 4px black;
+}
+
 }
