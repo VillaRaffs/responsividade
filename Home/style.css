@@ -18,7 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .s1 {
@@ -27,7 +27,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: center;
 }
 
 .img-s1 {
@@ -38,7 +37,7 @@ body {
 
 .title {
     font-family: "Libre Bodoni", serif;
-    color: black;
+    color: var(--black);
     padding-left: 20px;
     padding-top: 50px;
     font-weight: 900;
@@ -46,30 +45,30 @@ body {
 
 }
 
-.frase{
+.frase {
     padding-left: 20px;
     padding-top: 20px;
     margin-bottom: 50px;
     font-size: 20px;
-    color: var(--black);
+    color: var(--brown1);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
 }
 
-.line2{
+.line2 {
     width: 90%;
     height: 5px;
     border: var(--red1);
-    background-color: var(--red1);
+    background-color: var(--red2);
     display: block;
 }
 
-.line3{
+.line3 {
     width: 90vw;
     height: 5px;
     border: var(--red1);
-    background-color: var(--red1);
+    background-color: var(--red2);
     display: block;
 }
 
@@ -92,7 +91,7 @@ body {
     margin-bottom: 40px;
 }
 
-.s2{
+.s2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -108,25 +107,26 @@ body {
     box-shadow: #090909;
 }
 
-.bottom-card{
-    padding: 10px;
+.bottom-card {
+    padding: 10px; 
 }
 
-.bottom-card h2{
+.bottom-card h2 {
     color: var(--red1);
     font-size: 30px;
     text-shadow: 0 4px 4px black;
     margin-bottom: 10px;
 }
 
-.bottom-card p{
+.bottom-card p {
     color: var(--red2);
     font-size: 20px;
 }
 
-button{
+button {
     background-color: var(--brown1);
-    color: #090909;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 999px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -135,12 +135,12 @@ button{
     border: none;
     font-size: 24px;
     opacity: 0.9;
-    transform: all 200ms  linear;
+    transform: all 200ms linear;
 }
 
-button:hover{
+button:hover {
     opacity: 1;
-    cursor:pointer;
+    cursor: pointer;
 
 }
 
@@ -151,12 +151,12 @@ button:hover{
 }
 
 
-.top-card img{
+.top-card img {
     width: 300px;
     height: auto;
     transform: scale(1.3);
-    border-top-left-radius:20px ;
-    border-top-right-radius:20px ;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 
 }
 
@@ -179,26 +179,44 @@ button:hover{
     }
 
     .title {
-    font-family: "Libre Bodoni", serif;
-    color: var(--brown2);
-    font-size: 40px;
-    text-shadow: o 4px 4px var(--black);
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
+        font-family: "Libre Bodoni", serif;
+        color: var(--black);
+        font-size: 40px;
+        text-shadow: o 4px 4px var(--black);
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
 
-}
+    }
 
-.line{
-    display: none;
-}
+    .line {
+        display: none;
+    }
 
-.frase{
-   color: white;
-   font-size: 32px;
-   width: 100%;
-   text-align: center;
-   text-shadow: 0 4px 4px black;
-}
+    .frase {
+        color: var(--brown1);
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+        text-shadow: 0 4px 4px var(--brown1);
+    }
+
+    .top-card {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        border-top-left-radius:20px ;
+        border-top-right-radius:20px ;
+    }
+    
+    .top-card img{
+        width: 100%;
+        height: auto;
+    }
+
+    button{
+        color: #ffffff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 
 }
